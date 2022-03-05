@@ -1,0 +1,10 @@
+.root {
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}

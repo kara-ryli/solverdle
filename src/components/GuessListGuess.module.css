@@ -1,0 +1,31 @@
+.root {
+  display: block;
+  border: 1px solid #aaa;
+  margin: 2px;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+
+.option {
+  background-color: var(--color-option-contrast);
+  color: var(--color-absent);
+  cursor: pointer;
+}
+.exact {
+  background-color: var(--color-correct);
+  color: var(--color-option-contrast);
+  cursor: pointer;
+}
+.eliminated {
+  background-color: var(--color-absent);
+  color: var(--color-option-contrast);
+  cursor: pointer;
+}
+.potential {
+  background-color: var(--color-present);
+  color: var(--color-option-contrast);
+  cursor: pointer;
+}

@@ -1,0 +1,27 @@
+.root {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 4em calc(10em + 30px) 1fr;
+  margin: 0 auto;
+  max-width: 56em;
+  height: 100%;
+  padding: 1px 0;
+}
+.heading {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1;
+}
+.guesses {
+  grid-column: 1;
+  grid-row: 2;
+}
+.options {
+  grid-column: 2;
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.form {
+  grid-column: 1;
+  grid-row: 3;
+}

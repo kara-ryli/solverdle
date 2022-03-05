@@ -1,0 +1,9 @@
+.root {
+  cursor: pointer;
+  margin: 0.5em 0;
+}
+.word {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}

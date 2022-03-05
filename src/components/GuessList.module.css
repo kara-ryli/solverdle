@@ -1,0 +1,38 @@
+.root {
+}
+.guess {
+  display: flex;
+  flex-direction: row;
+}
+.letter {
+  display: block;
+  border: 1px solid #aaa;
+  margin: 2px;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  text-transform: uppercase;
+}
+.cancel {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  line-height: 1.2em;
+  background: var(--color-absent);
+  color: var(--color-option-contrast);
+  border-radius: 50%;
+  font-size: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  margin: 1.2em 0 0 4px;
+  padding: 0 0 1px 1px;
+  border: 0px none;
+}
+
+.guess:hover .cancel {
+  opacity: 1;
+  pointer-events: all;
+  cursor: pointer;
+}
