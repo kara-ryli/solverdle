@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes, useCallback, MouseEventHandler } from "react";
+import { FC, HTMLAttributes } from "react";
 import cx from "classnames";
 
 import { Dictionary } from "../lib/dictionary";
