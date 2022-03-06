@@ -58,25 +58,34 @@ const App: React.FC<AppProps> = ({ words, maxGuesses }) => {
   }, [guesses, words]);
   return (
     <div className={styles.root}>
-      <h1 className={styles.heading}>Solverdle</h1>
-      <GuessList
-        className={styles.guesses}
-        guesses={guesses}
-        onLetterResult={onLetterResult}
-        onCancelLastGuess={onCancelLastGuess}
-        maxGuesses={maxGuesses}
-        guessLength={guessLength}
-      />
-      <WordOptions
-        className={styles.options}
-        words={currentWords}
-        onGuess={guessWord}
-      />
-      <ManualGuess
-        className={styles.form}
-        onGuess={guessWord}
-        guessLength={guessLength}
-      />
+      <header className={styles.heading}>
+        <h1>Solverdle</h1>
+        <p>
+          Guess a word by typing or clicking to the right. Then click the
+          letters to switch between grey, yellow and green.
+        </p>
+      </header>
+      <div className={styles.app}>
+        <div className={styles.guesses}>
+          <GuessList
+            guesses={guesses}
+            onLetterResult={onLetterResult}
+            onCancelLastGuess={onCancelLastGuess}
+            maxGuesses={maxGuesses}
+            guessLength={guessLength}
+          />
+          <ManualGuess
+            className={styles.form}
+            onGuess={guessWord}
+            guessLength={guessLength}
+          />
+        </div>
+        <WordOptions
+          className={styles.options}
+          words={currentWords}
+          onGuess={guessWord}
+        />
+      </div>
     </div>
   );
 };

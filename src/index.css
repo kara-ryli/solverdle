@@ -11,14 +11,3 @@ body {
   --color-absent: #787c7e;
   --color-option-contrast: #fff;
 }
-
-html,
-body,
-#root {
-  height: 100%;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
